@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carta para Valeria</title>
+
+  <style>
+    /* Variables de color - ajusta si quieres */
+    :root{
+      --bg:#07111a;
+      --card:#0f1724;
+      --ivory:#f5f3ef;
+      --morado:#b887ff;
+      --rosa:#ff98b3;
+      --dorado:#ffd38a;
+      --verde:#8fe3c0;
+      --gris-trans:#ffffff10;
+    }
+
+    /* Base */
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Georgia, 'Times New Roman', serif;background:
+      radial-gradient(800px 400px at 10% 10%, #081422 0%, var(--bg) 40%), var(--bg); color:var(--ivory);-webkit-font-smoothing:antialiased}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+
+    /* Tarjeta */
+    .card{
+      width:min(960px,96%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px;
+      padding:28px 36px;
+      border:1px solid var(--gris-trans);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.6);
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* Cabecera */
+    header{display:flex;gap:16px;align-items:center}
+    .emblema{
+      width:68px;height:68px;border-radius:999px;display:grid;place-items:center;
+      background:linear-gradient(180deg,var(--morado),#8a5cf0);
+      color:#111;font-weight:700;box-shadow:0 8px 22px rgba(138,92,240,0.14)
+    }
+    h1{margin:0;font-size:1.35rem;color:var(--morado)}
+    h2{margin:0;font-size:0.95rem;color:var(--rosa);opacity:0.95}
+
+    /* Contenido */
+    main{margin-top:22px;line-height:1.66}
+    p{margin:14px 0;font-size:1.03rem}
+    .destacado { color: var(--dorado); font-weight: 700; }
+    .suave { color: var(--verde); }
+    .poetico { font-style:italic; color:#efeaf6; margin-top:18px; }
+
+    /* Firma */
+    footer{margin-top:26px;display:flex;flex-direction:column;gap:6px}
+    .firma{font-weight:700;color:var(--morado);font-size:1.05rem}
+    .nombre{color:var(--rosa);font-weight:700}
+
+    /* Decoración sutil */
+    .hearts{position:absolute;right:14px;top:10px;font-size:84px;opacity:0.08;transform:rotate(-12deg);pointer-events:none}
+    .glow{position:absolute;left:-120px;bottom:-120px;width:420px;height:420px;border-radius:999px;background:
+      radial-gradient(circle at 30% 30%, rgba(184,135,255,0.08), rgba(255,152,179,0.05), transparent 40%);filter:blur(18px);pointer-events:none}
+
+    /* Responsive */
+    @media (max-width:600px){
+      .emblema{width:56px;height:56px}
+      h1{font-size:1.12rem}
+      p{font-size:1rem}
+      .hearts{font-size:60px;right:8px;top:8px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="card" role="article" aria-label="Carta romántica para Valeria">
+      <div class="hearts">❤️❤️</div>
+      <div class="glow" aria-hidden="true"></div>
+
+      <header>
+        <div class="emblema" aria-hidden="true">V</div>
+        <div>
+          <h1>Mi princesa hermosa Valeria Isabel Petro Villazón,</h1>
+          <h2>Una carta para abrazar el alma</h2>
+        </div>
+      </header>
+
+      <main>
+        <p>
+          Ayer, cuando te sentías tan mal y dijiste que te sentías sola, yo solo quería abrazarte hasta que todo ese dolor se calmara.
+          Hice lo que pude para ayudarte, para que al menos se aliviara un poquito ese peso que te estaba apretando el corazón… y al final
+          <span class="destacado">te dormiste</span>, mi amor. Sentí una paz tan grande al saber que pudiste descansar después de ese momento tan duro.
+        </p>
+
+        <p>
+          Hoy al mediodía, cuando me dijiste que no tenías ánimos de hacer nada, se me partió el alma otra vez. Me importa cada emoción tuya, cada lágrima, cada silencio.
+          Y cuando en la tarde volviste a dormirte, esperaba que ese descanso te levantara un poquito más el ánimo.
+        </p>
+
+        <p>
+          Y ahora que despertaste y me dijiste que <span class="destacado">ya te sientes mejor</span>, princesa hermosa… no tienes idea de la alegría que me dio.
+        </p>
+
+        <p>
+          Aun así quiero que sepas algo muy importante: no tienes que cargar sola con nada. Yo estoy contigo cuando estás bien, cuando te sientes bajita,
+          cuando no puedes con tus pensamientos, cuando solo quieres silencio. Eres demasiado valiosa para mí.
+        </p>
+
+        <p>
+          Valeria, tú eres una mujer increíble. A veces tu corazón se cansa, y eso no te hace débil… te hace humana. Y yo estoy aquí para sostenerte, cuidarte
+          y acompañarte mientras vuelves a levantarte.
+        </p>
+
+        <p class="poetico">
+          Te adoro con el alma, princesa hermosa. Gracias por confiar en mí incluso en tus días grises. Yo quiero ser ese abrazo al que vuelves,
+          esa voz que te calma, ese apoyo que te acompaña incluso sin palabras. Quiero hacerte la vida más suave, más cálida, más bonita.
+        </p>
+
+        <p class="poetico">
+          Y pase lo que pase, recuerda que lo que siento por ti es como un susurro que nunca se apaga, como una lucecita encendida incluso en la noche más larga.
+          Mi cariño por ti es un refugio, un poema, una certeza que vive en mi pecho.
+        </p>
+      </main>
+
+      <footer>
+        <div class="firma">Con el corazón que siempre te nombra,</div>
+        <div class="nombre">Tu Juan K Mendoza P 💜</div>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
